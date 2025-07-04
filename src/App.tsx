@@ -8,6 +8,7 @@ import GiftRankingSection from "@/sections/GiftRankingSection";
 import { Route, Routes } from "react-router";
 import LoginPage from "./LoginPage";
 import NotFoundPage from "./NotFoundPage";
+import MyPage from "./MyPage";
 
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           } />
           <Route path="/login" element={
             <LoginPage />
+          } />
+          <Route path="/my" element={
+            <MyPage />
           } />
           <Route path="/*" element={
             <NotFoundPage />
